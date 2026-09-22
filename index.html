@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="i18n-loading">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.title">eSign – Signature Creator | Sign PDFs by hand, offline</title>
+<meta name="description" content="Sign PDFs by hand on iPhone and iPad — fully offline, private, and ready in under a minute." data-i18n-content="meta.description">
+<link rel="canonical" href="https://example.github.io/esign-pdf-signature/">
+
+<!-- hreflang -->
+<link rel="alternate" hreflang="en" href="https://example.github.io/esign-pdf-signature/index.html?lang=en">
+<link rel="alternate" hreflang="fr" href="https://example.github.io/esign-pdf-signature/index.html?lang=fr">
+<link rel="alternate" hreflang="it" href="https://example.github.io/esign-pdf-signature/index.html?lang=it">
+<link rel="alternate" hreflang="pt" href="https://example.github.io/esign-pdf-signature/index.html?lang=pt">
+<link rel="alternate" hreflang="es" href="https://example.github.io/esign-pdf-signature/index.html?lang=es">
+<link rel="alternate" hreflang="ar" href="https://example.github.io/esign-pdf-signature/index.html?lang=ar">
+<link rel="alternate" hreflang="de" href="https://example.github.io/esign-pdf-signature/index.html?lang=de">
+<link rel="alternate" hreflang="x-default" href="https://example.github.io/esign-pdf-signature/index.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="eSign – Signature Creator" data-i18n-content="meta.og_title">
+<meta property="og:description" content="Sign PDFs by hand, fully offline, private, and ready in under a minute." data-i18n-content="meta.og_description">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:url" content="https://example.github.io/esign-pdf-signature/">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="eSign – Signature Creator" data-i18n-content="meta.og_title">
+<meta name="twitter:description" content="Sign PDFs by hand, fully offline, private, and ready in under a minute." data-i18n-content="meta.og_description">
+<meta name="twitter:image" content="assets/og-image.png">
+
+<!-- Apple -->
+<meta name="apple-itunes-app" content="app-id=XXXXXXXXX">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Allura&family=Noto+Kufi+Arabic:wght@400;500;800&family=Cairo:wght@400;500;800&family=Aref+Ruqaa&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<script src="i18n.js" defer></script>
+<script src="script.js" defer></script>
+<noscript><style>html.i18n-loading body{visibility:visible}</style></noscript>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="bg-decor" aria-hidden="true">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+</div>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="nav-brand" href="#top">
+      <img class="nav-brand-icon" src="assets/icon.png" alt="" data-i18n-alt="nav.brand_alt" width="32" height="32">
+      <span>eSign</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-link" href="#features" data-i18n="nav.features">Features</a>
+      <a class="nav-link" href="#screenshots" data-i18n="nav.screenshots">Screenshots</a>
+      <a class="nav-link" href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+      <a class="nav-link" href="https://forms.gle/y6FA2eTFcu4VHF3r8" target="_blank" rel="noopener" data-i18n="nav.support">Support</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-switcher desktop-only" data-lang-switcher>
+        <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false" data-i18n-aria-label="nav.lang_aria">
+          <svg class="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg>
+          <span class="lang-current">EN</span>
+        </button>
+        <ul class="lang-dropdown" role="listbox" hidden></ul>
+      </div>
+      <a class="btn-pill" href="https://apps.apple.com/app/idXXXXXXXXX" target="_blank" rel="noopener">
+        <span data-i18n="nav.download">Download</span>
+      </a>
+      <button class="hamburger" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileNav" data-i18n-aria-label="nav.menu_aria">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+  <div class="mobile-nav-links">
+    <a href="#features" data-i18n="nav.features">Features</a>
+    <a href="#screenshots" data-i18n="nav.screenshots">Screenshots</a>
+    <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+    <a href="https://forms.gle/y6FA2eTFcu4VHF3r8" target="_blank" rel="noopener" data-i18n="nav.support">Support</a>
+  </div>
+  <div class="lang-switcher" data-lang-switcher>
+    <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false" data-i18n-aria-label="nav.lang_aria">
+      <svg class="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg>
+      <span class="lang-current">EN</span>
+    </button>
+    <ul class="lang-dropdown" role="listbox" hidden></ul>
+  </div>
+  <a class="btn-pill" href="https://apps.apple.com/app/idXXXXXXXXX" target="_blank" rel="noopener">
+    <span data-i18n="nav.download">Download</span>
+  </a>
+</nav>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="hero-eyebrow" data-i18n="hero.eyebrow">Sign with confidence</span>
+        <h1 class="hero-headline">
+          <span class="line line-1" data-i18n="hero.headline_line1">Sign PDFs</span>
+          <span class="line line-2" data-i18n="hero.headline_line2">by hand.</span>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Complete documents on your iPhone or iPad — fully offline, private, and ready in under a minute.</p>
+
+        <div class="hero-cta">
+          <a href="https://apps.apple.com/app/idXXXXXXXXX" target="_blank" rel="noopener">
+            <img class="appstore-badge" src="assets/badges/appstore-en.svg" alt="Download on the App Store" data-i18n-alt="hero.download_badge_alt">
+          </a>
+          <a class="badge-fallback" href="https://apps.apple.com/app/idXXXXXXXXX" target="_blank" rel="noopener" hidden>
+            <span data-i18n-alt-mirror data-i18n="hero.download_badge_alt">Download on the App Store</span>
+          </a>
+        </div>
+
+        <div class="hero-badges">
+          <span class="badge-chip"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 18a4 4 0 0 1-.6-7.96A5.5 5.5 0 0 1 17 9.5a3.5 3.5 0 0 1 .5 6.98"/><path d="M3 3l18 18"/></svg><span data-i18n="hero.badge_offline">Works Offline</span></span>
+          <span class="badge-chip"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg><span data-i18n="hero.badge_private">Your Data Stays Private</span></span>
+          <span class="badge-chip"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg><span data-i18n="hero.badge_fast">Fast &amp; Easy</span></span>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="phone-mockup">
+          <span class="notch"></span>
+          <span class="screen">
+            <img class="shot" data-shot="1" src="assets/screenshots/en/1.png" alt="eSign app showing a PDF ready to be signed" data-i18n-alt="hero.screenshot_alt" width="1284" height="2778" loading="eager">
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="section-title" data-i18n="features.section_title">Everything you need to sign, in one app</h2>
+        <p class="section-subtitle" data-i18n="features.section_subtitle">Powerful tools that stay simple — built for iPhone and iPad.</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card reveal">
+          <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg></span>
+          <h3 class="feature-title" data-i18n="features.f1_title">Place fields anywhere</h3>
+          <p class="feature-desc" data-i18n="features.f1_desc">Drop signatures, initials, dates, text, and checkboxes exactly where you need them.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M14 6l3 3"/></svg></span>
+          <h3 class="feature-title" data-i18n="features.f2_title">Draw your real signature</h3>
+          <p class="feature-desc" data-i18n="features.f2_desc">Adjust stroke thickness and ink color for a signature that looks like yours.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 6h14M12 6v13M9 19h6"/></svg></span>
+          <h3 class="feature-title" data-i18n="features.f3_title">Type in signature fonts</h3>
+          <p class="feature-desc" data-i18n="features.f3_desc">Choose from polished built-in styles, including Arabic fonts.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h3l2-2h6l2 2h3v11H4V8z"/><circle cx="12" cy="13" r="3.5"/></svg></span>
+          <h3 class="feature-title" data-i18n="features.f4_title">Photograph real ink</h3>
+          <p class="feature-desc" data-i18n="features.f4_desc">Capture a signature from paper, then clean and enhance it — Feather, Classic, Stamp, or Vector.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4V3z"/></svg></span>
+          <h3 class="feature-title" data-i18n="features.f5_title">Save &amp; reuse signatures</h3>
+          <p class="feature-desc" data-i18n="features.f5_desc">Store multiple signatures and set a default for one-tap signing.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6z"/></svg></span>
+          <h3 class="feature-title" data-i18n="features.f6_title">Keep every document ready</h3>
+          <p class="feature-desc" data-i18n="features.f6_desc">Import PDFs, search instantly, and filter by Signed, Drafts, or Favorites.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-section" id="place-fields">
+    <div class="container alt-inner">
+      <div class="alt-text reveal">
+        <span class="alt-accent" data-i18n="alt1.accent">Sign Anywhere
+          <svg class="squiggle" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 20 2, 40 2, 60 8 S 100 14, 118 6" fill="none" stroke-width="3" stroke-linecap="round"/></svg>
+        </span>
+        <h2 class="alt-headline">
+          <span class="line line-1" data-i18n="alt1.headline_line1">Place fields</span>
+          <span class="line line-2" data-i18n="alt1.headline_line2">anywhere.</span>
+        </h2>
+        <p class="alt-body" data-i18n="alt1.body">Tap to add signatures, initials, dates, text boxes, and checkboxes anywhere on the page. Everything snaps into place.</p>
+        <ul class="alt-points">
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt1.point1">Signatures &amp; initials</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt1.point2">Dates &amp; text fields</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt1.point3">Checkboxes</span></li>
+        </ul>
+      </div>
+      <div class="alt-media reveal">
+        <div class="phone-mockup">
+          <span class="notch"></span>
+          <span class="screen"><img class="shot" data-shot="1" src="assets/screenshots/en/1.png" alt="Placing signature fields on a PDF page" data-i18n-alt="alt1.screenshot_alt" width="1284" height="2778" loading="lazy"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-section reverse" id="draw-signature">
+    <div class="container alt-inner">
+      <div class="alt-text reveal">
+        <span class="alt-accent" data-i18n="alt2.accent">Make It Yours
+          <svg class="squiggle" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 20 2, 40 2, 60 8 S 100 14, 118 6" fill="none" stroke-width="3" stroke-linecap="round"/></svg>
+        </span>
+        <h2 class="alt-headline">
+          <span class="line line-1" data-i18n="alt2.headline_line1">Draw your</span>
+          <span class="line line-2" data-i18n="alt2.headline_line2">real signature.</span>
+        </h2>
+        <p class="alt-body" data-i18n="alt2.body">Sign naturally with your finger or Apple Pencil. Fine-tune thickness and ink color until it feels like you.</p>
+        <ul class="alt-points">
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt2.point1">Adjustable thickness</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt2.point2">Multiple ink colors</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt2.point3">Smooth, natural strokes</span></li>
+        </ul>
+      </div>
+      <div class="alt-media reveal">
+        <div class="phone-mockup">
+          <span class="notch"></span>
+          <span class="screen"><img class="shot" data-shot="2" src="assets/screenshots/en/2.png" alt="Drawing a handwritten signature" data-i18n-alt="alt2.screenshot_alt" width="1284" height="2778" loading="lazy"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-section" id="type-fonts">
+    <div class="container alt-inner">
+      <div class="alt-text reveal">
+        <span class="alt-accent" data-i18n="alt3.accent">Your Style, Typed
+          <svg class="squiggle" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 20 2, 40 2, 60 8 S 100 14, 118 6" fill="none" stroke-width="3" stroke-linecap="round"/></svg>
+        </span>
+        <h2 class="alt-headline">
+          <span class="line line-1" data-i18n="alt3.headline_line1">Type in</span>
+          <span class="line line-2" data-i18n="alt3.headline_line2">signature fonts.</span>
+        </h2>
+        <p class="alt-body" data-i18n="alt3.body">Prefer to type? Pick from a set of polished signature styles, including dedicated Arabic fonts.</p>
+        <ul class="alt-points">
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt3.point1">Elegant built-in styles</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt3.point2">Arabic fonts included</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt3.point3">Instant live preview</span></li>
+        </ul>
+      </div>
+      <div class="alt-media reveal">
+        <div class="phone-mockup">
+          <span class="notch"></span>
+          <span class="screen"><img class="shot" data-shot="3" src="assets/screenshots/en/3.png" alt="Typing a name in a signature font" data-i18n-alt="alt3.screenshot_alt" width="1284" height="2778" loading="lazy"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-section reverse" id="photograph-ink">
+    <div class="container alt-inner">
+      <div class="alt-text reveal">
+        <span class="alt-accent" data-i18n="alt4.accent">Capture It Right
+          <svg class="squiggle" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 20 2, 40 2, 60 8 S 100 14, 118 6" fill="none" stroke-width="3" stroke-linecap="round"/></svg>
+        </span>
+        <h2 class="alt-headline">
+          <span class="line line-1" data-i18n="alt4.headline_line1">Photograph</span>
+          <span class="line line-2" data-i18n="alt4.headline_line2">real ink.</span>
+        </h2>
+        <p class="alt-body" data-i18n="alt4.body">Sign on paper, then snap a photo. eSign cleans up the background and enhances the stroke automatically.</p>
+        <ul class="alt-points">
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt4.point1">Clean &amp; enhance</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt4.point2">Feather, Classic, Stamp, Vector</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt4.point3">Paper to digital in seconds</span></li>
+        </ul>
+      </div>
+      <div class="alt-media reveal">
+        <div class="phone-mockup">
+          <span class="notch"></span>
+          <span class="screen"><img class="shot" data-shot="4" src="assets/screenshots/en/4.png" alt="Photographing a handwritten signature from paper" data-i18n-alt="alt4.screenshot_alt" width="1284" height="2778" loading="lazy"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-section" id="save-reuse">
+    <div class="container alt-inner">
+      <div class="alt-text reveal">
+        <span class="alt-accent" data-i18n="alt5.accent">Ready When You Are
+          <svg class="squiggle" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 20 2, 40 2, 60 8 S 100 14, 118 6" fill="none" stroke-width="3" stroke-linecap="round"/></svg>
+        </span>
+        <h2 class="alt-headline">
+          <span class="line line-1" data-i18n="alt5.headline_line1">Save signatures.</span>
+          <span class="line line-2" data-i18n="alt5.headline_line2">Reuse anytime.</span>
+        </h2>
+        <p class="alt-body" data-i18n="alt5.body">Keep as many signatures as you need, set a default, and sign new documents in a single tap.</p>
+        <ul class="alt-points">
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt5.point1">Store multiple signatures</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt5.point2">Set a default</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt5.point3">One-tap reuse</span></li>
+        </ul>
+      </div>
+      <div class="alt-media reveal">
+        <div class="phone-mockup">
+          <span class="notch"></span>
+          <span class="screen"><img class="shot" data-shot="5" src="assets/screenshots/en/5.png" alt="Library of saved signatures" data-i18n-alt="alt5.screenshot_alt" width="1284" height="2778" loading="lazy"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-section reverse" id="keep-ready">
+    <div class="container alt-inner">
+      <div class="alt-text reveal">
+        <span class="alt-accent" data-i18n="alt6.accent">Your PDF Hub
+          <svg class="squiggle" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 20 2, 40 2, 60 8 S 100 14, 118 6" fill="none" stroke-width="3" stroke-linecap="round"/></svg>
+        </span>
+        <h2 class="alt-headline">
+          <span class="line line-1" data-i18n="alt6.headline_line1">Keep every</span>
+          <span class="line line-2" data-i18n="alt6.headline_line2">document ready.</span>
+        </h2>
+        <p class="alt-body" data-i18n="alt6.body">Import PDFs from anywhere, find them instantly, and filter by Signed, Drafts, or Favorites.</p>
+        <ul class="alt-points">
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt6.point1">Import from anywhere</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt6.point2">Instant search</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="alt6.point3">Signed, Drafts, Favorites</span></li>
+        </ul>
+      </div>
+      <div class="alt-media reveal">
+        <div class="phone-mockup">
+          <span class="notch"></span>
+          <span class="screen"><img class="shot" data-shot="6" src="assets/screenshots/en/6.png" alt="List of documents filtered by status" data-i18n-alt="alt6.screenshot_alt" width="1284" height="2778" loading="lazy"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="screenshots">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="section-title" data-i18n="gallery.title">See it in action</h2>
+        <p class="section-subtitle" data-i18n="gallery.subtitle">A closer look at every step, from blank page to signed document.</p>
+      </div>
+
+      <div class="gallery-track" id="galleryTrack">
+        <button class="gallery-item reveal" type="button">
+          <span class="phone-mockup"><span class="notch"></span><span class="screen"><img class="shot" data-shot="1" src="assets/screenshots/en/1.png" alt="Placing signature fields on a PDF page" data-i18n-alt="gallery.shot1_alt" width="1284" height="2778" loading="lazy"></span></span>
+        </button>
+        <button class="gallery-item reveal" type="button">
+          <span class="phone-mockup"><span class="notch"></span><span class="screen"><img class="shot" data-shot="2" src="assets/screenshots/en/2.png" alt="Drawing a handwritten signature" data-i18n-alt="gallery.shot2_alt" width="1284" height="2778" loading="lazy"></span></span>
+        </button>
+        <button class="gallery-item reveal" type="button">
+          <span class="phone-mockup"><span class="notch"></span><span class="screen"><img class="shot" data-shot="3" src="assets/screenshots/en/3.png" alt="Typing a name in a signature font" data-i18n-alt="gallery.shot3_alt" width="1284" height="2778" loading="lazy"></span></span>
+        </button>
+        <button class="gallery-item reveal" type="button">
+          <span class="phone-mockup"><span class="notch"></span><span class="screen"><img class="shot" data-shot="4" src="assets/screenshots/en/4.png" alt="Photographing a handwritten signature from paper" data-i18n-alt="gallery.shot4_alt" width="1284" height="2778" loading="lazy"></span></span>
+        </button>
+        <button class="gallery-item reveal" type="button">
+          <span class="phone-mockup"><span class="notch"></span><span class="screen"><img class="shot" data-shot="5" src="assets/screenshots/en/5.png" alt="Library of saved signatures" data-i18n-alt="gallery.shot5_alt" width="1284" height="2778" loading="lazy"></span></span>
+        </button>
+        <button class="gallery-item reveal" type="button">
+          <span class="phone-mockup"><span class="notch"></span><span class="screen"><img class="shot" data-shot="6" src="assets/screenshots/en/6.png" alt="List of documents filtered by status" data-i18n-alt="gallery.shot6_alt" width="1284" height="2778" loading="lazy"></span></span>
+        </button>
+        <button class="gallery-item reveal" type="button">
+          <span class="phone-mockup"><span class="notch"></span><span class="screen"><img class="shot" data-shot="7" src="assets/screenshots/en/7.png" alt="A completed, signed document" data-i18n-alt="gallery.shot7_alt" width="1284" height="2778" loading="lazy"></span></span>
+        </button>
+      </div>
+
+      <div class="gallery-controls">
+        <button class="gallery-nav-btn" id="galleryPrev" type="button" data-i18n-aria-label="gallery.prev_aria" aria-label="Previous screenshot">
+          <svg class="icon flip-rtl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+        <button class="gallery-nav-btn" id="galleryNext" type="button" data-i18n-aria-label="gallery.next_aria" aria-label="Next screenshot">
+          <svg class="icon flip-rtl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy-section">
+    <div class="container">
+      <div class="privacy-band reveal">
+        <svg class="privacy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+        <h2 class="privacy-title" data-i18n="privacyband.title">Your documents never leave your device.</h2>
+        <p class="privacy-desc" data-i18n="privacyband.desc">eSign works completely offline, so your files stay exactly where they belong: with you.</p>
+        <ul class="privacy-points">
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="privacyband.point1">Works fully offline</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="privacyband.point2">No account required</span></li>
+          <li class="alt-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="privacyband.point3">No tracking</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="section-title" data-i18n="faq.title">Frequently asked questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary data-i18n="faq.q1">Does eSign work without an internet connection?</summary>
+          <div class="faq-answer"><p data-i18n="faq.a1">Yes. eSign works completely offline — signing, editing, and saving all happen on your device, with no internet connection required.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary data-i18n="faq.q2">Is eSign available on iPad?</summary>
+          <div class="faq-answer"><p data-i18n="faq.a2">Yes. eSign is built for both iPhone and iPad, with a layout that adapts to your screen.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary data-i18n="faq.q3">Which file formats are supported?</summary>
+          <div class="faq-answer"><p data-i18n="faq.a3">eSign works with PDF files — the standard format for contracts, forms, and official documents.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary data-i18n="faq.q4">Where are my signatures stored?</summary>
+          <div class="faq-answer"><p data-i18n="faq.a4">Your signatures and documents are stored locally on your device. Nothing is uploaded to a server.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary data-i18n="faq.q5">Can I use eSign signatures for legal documents?</summary>
+          <div class="faq-answer"><p data-i18n="faq.a5">eSign creates handwritten and typed signatures suitable for many everyday documents. For documents with specific legal requirements, check the rules that apply in your country or industry.</p></div>
+        </details>
+      </div>
+      <p class="faq-help reveal">
+        <span data-i18n="faq.help_title">Still need help?</span>
+        <a href="https://forms.gle/y6FA2eTFcu4VHF3r8" target="_blank" rel="noopener" data-i18n="faq.help_link">Contact us</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <div class="cta-card reveal">
+        <h2 class="cta-title" data-i18n="cta.title">Ready to sign?</h2>
+        <p class="cta-subtitle" data-i18n="cta.subtitle">Download eSign and sign your first document in under a minute.</p>
+        <div class="hero-cta">
+          <a href="https://apps.apple.com/app/idXXXXXXXXX" target="_blank" rel="noopener">
+            <img class="appstore-badge" src="assets/badges/appstore-en.svg" alt="Download on the App Store" data-i18n-alt="cta.badge_alt">
+          </a>
+          <a class="badge-fallback" href="https://apps.apple.com/app/idXXXXXXXXX" target="_blank" rel="noopener" hidden>
+            <span data-i18n-alt-mirror data-i18n="cta.badge_alt">Download on the App Store</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/icon.png" alt="" data-i18n-alt="nav.brand_alt" width="28" height="28">
+      <span>eSign</span>
+    </div>
+
+    <ul class="footer-links">
+      <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+      <li><a href="support.html" data-i18n="footer.support">Support</a></li>
+      <li><a href="https://forms.gle/y6FA2eTFcu4VHF3r8" target="_blank" rel="noopener" data-i18n="footer.contact">Contact</a></li>
+    </ul>
+
+    <div class="lang-switcher" data-lang-switcher>
+      <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false" data-i18n-aria-label="footer.lang_aria">
+        <svg class="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg>
+        <span class="lang-current">EN</span>
+      </button>
+      <ul class="lang-dropdown" role="listbox" hidden></ul>
+    </div>
+  </div>
+  <p class="container footer-copyright" data-i18n="footer.copyright">© 2026 eSign – Signature Creator. All rights reserved.</p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightboxClose" type="button" data-i18n-aria-label="gallery.lightbox_close_aria" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+</body>
+</html>
