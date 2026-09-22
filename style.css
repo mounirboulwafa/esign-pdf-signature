@@ -328,41 +328,24 @@ p { margin: 0; }
 .lang-option:hover { background: var(--primary-light); }
 .lang-option.is-active { color: var(--primary); font-weight: 700; }
 
-/* ============ Phone mockup ============ */
-.phone-mockup {
+/* ============ Screenshot frame ============
+   Source screenshots already include their own device bezel, notch, drop
+   shadow, and decorative background — they are finished marketing images,
+   not bare UI captures — so this wrapper adds no extra chrome of its own. */
+.screenshot-frame {
   position: relative;
   width: 100%;
   max-width: 280px;
-  aspect-ratio: 1284 / 2778;
   margin-inline: auto;
-  background: #0b0b0c;
-  border-radius: 46px;
-  padding: 12px;
-  box-shadow: var(--shadow-card);
-}
-.phone-mockup .notch {
-  position: absolute;
-  inset-block-start: 12px;
-  inset-inline-start: 50%;
-  transform: translateX(-50%);
-  width: 34%;
-  height: 22px;
-  background: #0b0b0c;
-  border-radius: 14px;
-  z-index: 2;
-}
-.phone-mockup .screen {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 34px;
+  border-radius: 20px;
   overflow: hidden;
+  box-shadow: var(--shadow-card);
   background: var(--primary-light);
 }
-.phone-mockup img {
+.screenshot-frame img {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 }
 
 /* ============ Hero ============ */
@@ -541,7 +524,7 @@ html[dir="rtl"] .alt-accent { transform: rotate(12deg); }
   padding: 0;
   cursor: zoom-in;
 }
-.gallery-item .phone-mockup { max-width: 200px; }
+.gallery-item .screenshot-frame { max-width: 200px; }
 
 .gallery-controls {
   display: flex;
